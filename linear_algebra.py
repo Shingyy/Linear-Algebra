@@ -69,7 +69,7 @@ if __name__== "__main__":
         my_matrix= Matrix(my_matrix)
         Det= det(my_matrix.matrix)
         det_func_calls_arr.append(det_func_calls)
-    plt.title("Time Complexity")
+    plt.title("Computational Complexity")
     plt.grid(True)
     sns.lineplot(pd.DataFrame({"Function Calls":det_func_calls_arr,"Matrix Size":list(range(3,9))}),x="Matrix Size",y="Function Calls")
     plt.show()

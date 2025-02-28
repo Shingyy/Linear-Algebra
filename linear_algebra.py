@@ -9,7 +9,6 @@ class Matrix():
         rows=[f"Row{i+1}" for i in range(dmsn)]
         columns=[f"Col{i+1}" for i in range(dmsn)]
         self.matrix= pd.DataFrame(np_array,columns=columns,index=rows)
-        mat= pd.DataFrame(np_array,columns=columns,index=rows)
 det_func_calls=0 #number of calls for the determinant function
 #Calculates the determinant of a Square Matrix
 def det(matrix):
